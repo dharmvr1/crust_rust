@@ -1,0 +1,6 @@
+2025-12-02T04:19:52.397Z INFO  [rustowlc::core] start borrowck of DefId(0:3 ~ iterator[19f2]::main)
+2025-12-02T04:19:52.406Z INFO  [rustowlc::core::analyze] facts of DefId(0:3 ~ iterator[19f2]::main) prepared; start analyze of DefId(0:3 ~ iterator[19f2]::main)
+2025-12-02T04:19:52.407Z INFO  [rustowlc::core] borrow checked: 1 / 1
+2025-12-02T04:19:52.407Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-02T04:19:52.420Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-02T04:19:52.427Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/iterator/src/main.rs
