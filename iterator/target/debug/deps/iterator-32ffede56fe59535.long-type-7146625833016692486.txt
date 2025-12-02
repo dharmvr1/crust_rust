@@ -1,0 +1,1 @@
+FlatMap<std::vec::IntoIter<Vec<{integer}>>, Vec<{integer}>, {closure@src/flatten.rs:85:72: 85:75}>

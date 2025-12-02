@@ -1,0 +1,30 @@
+2025-12-02T19:48:52.705Z INFO  [rustowlc::core] start borrowck of DefId(0:7 ~ advent_code[05c5]::tests::it_works)
+2025-12-02T19:48:52.708Z INFO  [rustowlc::core] start borrowck of DefId(0:8 ~ advent_code[05c5]::tests::it_works::{closure#0})
+2025-12-02T19:48:52.710Z INFO  [rustowlc::core::analyze] facts of DefId(0:8 ~ advent_code[05c5]::tests::it_works::{closure#0}) prepared; start analyze of DefId(0:8 ~ advent_code[05c5]::tests::it_works::{closure#0})
+2025-12-02T19:48:52.710Z INFO  [rustowlc::core] borrow checked: 1 / 5
+2025-12-02T19:48:52.710Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-02T19:48:52.711Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-02T19:48:52.711Z INFO  [rustowlc::core::analyze] facts of DefId(0:7 ~ advent_code[05c5]::tests::it_works) prepared; start analyze of DefId(0:7 ~ advent_code[05c5]::tests::it_works)
+2025-12-02T19:48:52.711Z INFO  [rustowlc::core] borrow checked: 2 / 5
+2025-12-02T19:48:52.711Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-02T19:48:52.712Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-02T19:48:52.713Z INFO  [rustowlc::core] start borrowck of DefId(0:3 ~ advent_code[05c5]::add)
+2025-12-02T19:48:52.714Z INFO  [rustowlc::core::analyze] facts of DefId(0:3 ~ advent_code[05c5]::add) prepared; start analyze of DefId(0:3 ~ advent_code[05c5]::add)
+2025-12-02T19:48:52.714Z INFO  [rustowlc::core] borrow checked: 3 / 5
+2025-12-02T19:48:52.714Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-02T19:48:52.714Z INFO  [rustowlc::core] start borrowck of DefId(0:9 ~ advent_code[05c5]::tests::it_works#1)
+2025-12-02T19:48:52.714Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-02T19:48:52.715Z INFO  [rustowlc::core::analyze] facts of DefId(0:9 ~ advent_code[05c5]::tests::it_works#1) prepared; start analyze of DefId(0:9 ~ advent_code[05c5]::tests::it_works#1)
+2025-12-02T19:48:52.715Z INFO  [rustowlc::core] borrow checked: 4 / 5
+2025-12-02T19:48:52.715Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-02T19:48:52.715Z INFO  [rustowlc::core] start borrowck of DefId(0:10 ~ advent_code[05c5]::main)
+2025-12-02T19:48:52.716Z INFO  [rustowlc::core::analyze] facts of DefId(0:10 ~ advent_code[05c5]::main) prepared; start analyze of DefId(0:10 ~ advent_code[05c5]::main)
+2025-12-02T19:48:52.716Z INFO  [rustowlc::core] borrow checked: 5 / 5
+2025-12-02T19:48:52.716Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-02T19:48:52.716Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-02T19:48:52.718Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-02T19:48:52.720Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/advent_code/src/lib.rs
+2025-12-02T19:48:52.720Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/advent_code/src/lib.rs
+2025-12-02T19:48:52.721Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/advent_code/src/lib.rs
+2025-12-02T19:48:52.721Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/advent_code/src/lib.rs
+2025-12-02T19:48:52.721Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/advent_code/src/lib.rs
