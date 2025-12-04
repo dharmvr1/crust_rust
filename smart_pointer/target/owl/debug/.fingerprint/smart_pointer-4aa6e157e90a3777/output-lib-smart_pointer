@@ -1,138 +1,138 @@
 {"$message_type":"diagnostic","message":"unused imports: `Cell` and `sync`","code":{"code":"unused_imports","explanation":null},"level":"warning","spans":[{"file_name":"src/cell.rs","byte_start":22,"byte_end":26,"line_start":2,"line_end":2,"column_start":12,"column_end":16,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":12,"highlight_end":16}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"src/cell.rs","byte_start":45,"byte_end":49,"line_start":3,"line_end":3,"column_start":5,"column_end":9,"is_primary":true,"text":[{"text":"    sync,","highlight_start":5,"highlight_end":9}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"`#[warn(unused_imports)]` on by default","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"remove the unused imports","code":null,"level":"help","spans":[{"file_name":"src/cell.rs","byte_start":22,"byte_end":28,"line_start":2,"line_end":2,"column_start":12,"column_end":18,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":12,"highlight_end":18}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null},{"file_name":"src/cell.rs","byte_start":21,"byte_end":22,"line_start":2,"line_end":2,"column_start":11,"column_end":12,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":11,"highlight_end":12}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null},{"file_name":"src/cell.rs","byte_start":38,"byte_end":39,"line_start":2,"line_end":2,"column_start":28,"column_end":29,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":28,"highlight_end":29}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null},{"file_name":"src/cell.rs","byte_start":39,"byte_end":49,"line_start":2,"line_end":3,"column_start":29,"column_end":9,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":29,"highlight_end":30},{"text":"    sync,","highlight_start":1,"highlight_end":9}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null},{"file_name":"src/cell.rs","byte_start":9,"byte_end":15,"line_start":1,"line_end":2,"column_start":10,"column_end":5,"is_primary":true,"text":[{"text":"use std::{","highlight_start":10,"highlight_end":11},{"text":"    cell::{Cell, UnsafeCell},","highlight_start":1,"highlight_end":5}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null},{"file_name":"src/cell.rs","byte_start":49,"byte_end":52,"line_start":3,"line_end":4,"column_start":9,"column_end":2,"is_primary":true,"text":[{"text":"    sync,","highlight_start":9,"highlight_end":10},{"text":"};","highlight_start":1,"highlight_end":2}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null}],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: unused imports: `Cell` and `sync`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/cell.rs:2:12\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m2\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m    cell::{Cell, UnsafeCell},\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m            \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^^\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m3\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m    sync,\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m     \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^^\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mnote\u001b[0m\u001b[0m: `#[warn(unused_imports)]` on by default\u001b[0m\n\n"}
 {"$message_type":"diagnostic","message":"unused import: `collections::btree_map::Values`","code":{"code":"unused_imports","explanation":null},"level":"warning","spans":[{"file_name":"src/rc.rs","byte_start":58,"byte_end":88,"line_start":3,"line_end":3,"column_start":11,"column_end":41,"is_primary":true,"text":[{"text":"use std::{collections::btree_map::Values, marker::PhantomData, ops::Deref};","highlight_start":11,"highlight_end":41}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"remove the unused import","code":null,"level":"help","spans":[{"file_name":"src/rc.rs","byte_start":58,"byte_end":90,"line_start":3,"line_end":3,"column_start":11,"column_end":43,"is_primary":true,"text":[{"text":"use std::{collections::btree_map::Values, marker::PhantomData, ops::Deref};","highlight_start":11,"highlight_end":43}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null}],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: unused import: `collections::btree_map::Values`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/rc.rs:3:11\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m3\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0muse std::{collections::btree_map::Values, marker::PhantomData, ops::Deref};\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m           \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\u001b[0m\n\n"}
 {"$message_type":"diagnostic","message":"unused import: `Cell`","code":{"code":"unused_imports","explanation":null},"level":"warning","spans":[{"file_name":"src/ref_cell.rs","byte_start":47,"byte_end":51,"line_start":3,"line_end":3,"column_start":12,"column_end":16,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":12,"highlight_end":16}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"remove the unused import","code":null,"level":"help","spans":[{"file_name":"src/ref_cell.rs","byte_start":47,"byte_end":53,"line_start":3,"line_end":3,"column_start":12,"column_end":18,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":12,"highlight_end":18}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null},{"file_name":"src/ref_cell.rs","byte_start":46,"byte_end":47,"line_start":3,"line_end":3,"column_start":11,"column_end":12,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":11,"highlight_end":12}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null},{"file_name":"src/ref_cell.rs","byte_start":63,"byte_end":64,"line_start":3,"line_end":3,"column_start":28,"column_end":29,"is_primary":true,"text":[{"text":"    cell::{Cell, UnsafeCell},","highlight_start":28,"highlight_end":29}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null}],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: unused import: `Cell`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/ref_cell.rs:3:12\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m3\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m    cell::{Cell, UnsafeCell},\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m            \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^^\u001b[0m\n\n"}
-2025-12-04T02:19:35.408Z INFO  [rustowlc::core] start borrowck of DefId(0:26 ~ smart_pointer[7e80]::arc::{impl#2}::new)
-2025-12-04T02:19:35.409Z INFO  [rustowlc::core::analyze] facts of DefId(0:26 ~ smart_pointer[7e80]::arc::{impl#2}::new) prepared; start analyze of DefId(0:26 ~ smart_pointer[7e80]::arc::{impl#2}::new)
-2025-12-04T02:19:35.410Z INFO  [rustowlc::core] borrow checked: 1 / 22
-2025-12-04T02:19:35.410Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.410Z INFO  [rustowlc::core] start borrowck of DefId(0:30 ~ smart_pointer[7e80]::arc::{impl#3}::deref)
-2025-12-04T02:19:35.410Z INFO  [rustowlc::core::analyze] facts of DefId(0:30 ~ smart_pointer[7e80]::arc::{impl#3}::deref) prepared; start analyze of DefId(0:30 ~ smart_pointer[7e80]::arc::{impl#3}::deref)
-2025-12-04T02:19:35.410Z INFO  [rustowlc::core] borrow checked: 2 / 22
-2025-12-04T02:19:35.410Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.411Z INFO  [rustowlc::core] start borrowck of DefId(0:33 ~ smart_pointer[7e80]::arc::{impl#4}::clone)
-2025-12-04T02:19:35.411Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.411Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.412Z INFO  [rustowlc::core::analyze] facts of DefId(0:33 ~ smart_pointer[7e80]::arc::{impl#4}::clone) prepared; start analyze of DefId(0:33 ~ smart_pointer[7e80]::arc::{impl#4}::clone)
-2025-12-04T02:19:35.412Z INFO  [rustowlc::core] borrow checked: 3 / 22
-2025-12-04T02:19:35.412Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.412Z INFO  [rustowlc::core] start borrowck of DefId(0:36 ~ smart_pointer[7e80]::arc::{impl#5}::drop)
-2025-12-04T02:19:35.413Z INFO  [rustowlc::core::analyze] facts of DefId(0:36 ~ smart_pointer[7e80]::arc::{impl#5}::drop) prepared; start analyze of DefId(0:36 ~ smart_pointer[7e80]::arc::{impl#5}::drop)
-2025-12-04T02:19:35.413Z INFO  [rustowlc::core] borrow checked: 4 / 22
-2025-12-04T02:19:35.413Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.413Z INFO  [rustowlc::core] start borrowck of DefId(0:48 ~ smart_pointer[7e80]::cell::{impl#0}::new)
-2025-12-04T02:19:35.413Z INFO  [rustowlc::core::analyze] facts of DefId(0:48 ~ smart_pointer[7e80]::cell::{impl#0}::new) prepared; start analyze of DefId(0:48 ~ smart_pointer[7e80]::cell::{impl#0}::new)
-2025-12-04T02:19:35.413Z INFO  [rustowlc::core] borrow checked: 5 / 22
-2025-12-04T02:19:35.413Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core] start borrowck of DefId(0:49 ~ smart_pointer[7e80]::cell::{impl#0}::set)
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core::analyze] facts of DefId(0:49 ~ smart_pointer[7e80]::cell::{impl#0}::set) prepared; start analyze of DefId(0:49 ~ smart_pointer[7e80]::cell::{impl#0}::set)
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core] borrow checked: 6 / 22
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core] start borrowck of DefId(0:50 ~ smart_pointer[7e80]::cell::{impl#0}::get)
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core::analyze] facts of DefId(0:50 ~ smart_pointer[7e80]::cell::{impl#0}::get) prepared; start analyze of DefId(0:50 ~ smart_pointer[7e80]::cell::{impl#0}::get)
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core] borrow checked: 7 / 22
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core] start borrowck of DefId(0:68 ~ smart_pointer[7e80]::rc::{impl#0}::new)
-2025-12-04T02:19:35.414Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.415Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.415Z INFO  [rustowlc::core::analyze] facts of DefId(0:68 ~ smart_pointer[7e80]::rc::{impl#0}::new) prepared; start analyze of DefId(0:68 ~ smart_pointer[7e80]::rc::{impl#0}::new)
-2025-12-04T02:19:35.415Z INFO  [rustowlc::core] borrow checked: 8 / 22
-2025-12-04T02:19:35.415Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.415Z INFO  [rustowlc::core] start borrowck of DefId(0:71 ~ smart_pointer[7e80]::rc::{impl#1}::clone)
-2025-12-04T02:19:35.415Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core::analyze] facts of DefId(0:71 ~ smart_pointer[7e80]::rc::{impl#1}::clone) prepared; start analyze of DefId(0:71 ~ smart_pointer[7e80]::rc::{impl#1}::clone)
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core] borrow checked: 9 / 22
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core] start borrowck of DefId(0:75 ~ smart_pointer[7e80]::rc::{impl#2}::deref)
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core::analyze] facts of DefId(0:75 ~ smart_pointer[7e80]::rc::{impl#2}::deref) prepared; start analyze of DefId(0:75 ~ smart_pointer[7e80]::rc::{impl#2}::deref)
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core] borrow checked: 10 / 22
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core] start borrowck of DefId(0:78 ~ smart_pointer[7e80]::rc::{impl#3}::drop)
-2025-12-04T02:19:35.416Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.417Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core::analyze] facts of DefId(0:78 ~ smart_pointer[7e80]::rc::{impl#3}::drop) prepared; start analyze of DefId(0:78 ~ smart_pointer[7e80]::rc::{impl#3}::drop)
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core] borrow checked: 11 / 22
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core] start borrowck of DefId(0:143 ~ smart_pointer[7e80]::ref_cell::{impl#6}::clone)
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core::analyze] facts of DefId(0:143 ~ smart_pointer[7e80]::ref_cell::{impl#6}::clone) prepared; start analyze of DefId(0:143 ~ smart_pointer[7e80]::ref_cell::{impl#6}::clone)
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core] borrow checked: 12 / 22
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core] start borrowck of DefId(0:94 ~ smart_pointer[7e80]::ref_cell::{impl#0}::new)
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.418Z INFO  [rustowlc::core::analyze] facts of DefId(0:94 ~ smart_pointer[7e80]::ref_cell::{impl#0}::new) prepared; start analyze of DefId(0:94 ~ smart_pointer[7e80]::ref_cell::{impl#0}::new)
-2025-12-04T02:19:35.419Z INFO  [rustowlc::core] borrow checked: 13 / 22
-2025-12-04T02:19:35.419Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.419Z INFO  [rustowlc::core] start borrowck of DefId(0:95 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow)
-2025-12-04T02:19:35.419Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.421Z INFO  [rustowlc::core::analyze] facts of DefId(0:95 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow) prepared; start analyze of DefId(0:95 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow)
-2025-12-04T02:19:35.421Z INFO  [rustowlc::core] borrow checked: 14 / 22
-2025-12-04T02:19:35.421Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.421Z INFO  [rustowlc::core] start borrowck of DefId(0:96 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow_mut)
-2025-12-04T02:19:35.422Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.422Z INFO  [rustowlc::core::analyze] facts of DefId(0:96 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow_mut) prepared; start analyze of DefId(0:96 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow_mut)
-2025-12-04T02:19:35.422Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.422Z INFO  [rustowlc::core] borrow checked: 15 / 22
-2025-12-04T02:19:35.422Z INFO  [rustowlc::core] start borrowck of DefId(0:104 ~ smart_pointer[7e80]::ref_cell::{impl#1}::deref)
-2025-12-04T02:19:35.423Z INFO  [rustowlc::core::analyze] facts of DefId(0:104 ~ smart_pointer[7e80]::ref_cell::{impl#1}::deref) prepared; start analyze of DefId(0:104 ~ smart_pointer[7e80]::ref_cell::{impl#1}::deref)
-2025-12-04T02:19:35.423Z INFO  [rustowlc::core] borrow checked: 16 / 22
-2025-12-04T02:19:35.423Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.423Z INFO  [rustowlc::core] start borrowck of DefId(0:107 ~ smart_pointer[7e80]::ref_cell::{impl#2}::drop)
-2025-12-04T02:19:35.423Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.424Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.424Z INFO  [rustowlc::core::analyze] facts of DefId(0:107 ~ smart_pointer[7e80]::ref_cell::{impl#2}::drop) prepared; start analyze of DefId(0:107 ~ smart_pointer[7e80]::ref_cell::{impl#2}::drop)
-2025-12-04T02:19:35.425Z INFO  [rustowlc::core] borrow checked: 17 / 22
-2025-12-04T02:19:35.425Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.425Z INFO  [rustowlc::core] start borrowck of DefId(0:115 ~ smart_pointer[7e80]::ref_cell::{impl#3}::deref)
-2025-12-04T02:19:35.425Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.425Z INFO  [rustowlc::core::analyze] facts of DefId(0:115 ~ smart_pointer[7e80]::ref_cell::{impl#3}::deref) prepared; start analyze of DefId(0:115 ~ smart_pointer[7e80]::ref_cell::{impl#3}::deref)
-2025-12-04T02:19:35.425Z INFO  [rustowlc::core] borrow checked: 18 / 22
-2025-12-04T02:19:35.425Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.425Z INFO  [rustowlc::core] start borrowck of DefId(0:118 ~ smart_pointer[7e80]::ref_cell::{impl#4}::deref_mut)
-2025-12-04T02:19:35.426Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.426Z INFO  [rustowlc::core::analyze] facts of DefId(0:118 ~ smart_pointer[7e80]::ref_cell::{impl#4}::deref_mut) prepared; start analyze of DefId(0:118 ~ smart_pointer[7e80]::ref_cell::{impl#4}::deref_mut)
-2025-12-04T02:19:35.426Z INFO  [rustowlc::core] borrow checked: 19 / 22
-2025-12-04T02:19:35.426Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.427Z INFO  [rustowlc::core] start borrowck of DefId(0:121 ~ smart_pointer[7e80]::ref_cell::{impl#5}::drop)
-2025-12-04T02:19:35.427Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.427Z INFO  [rustowlc::core::analyze] facts of DefId(0:121 ~ smart_pointer[7e80]::ref_cell::{impl#5}::drop) prepared; start analyze of DefId(0:121 ~ smart_pointer[7e80]::ref_cell::{impl#5}::drop)
-2025-12-04T02:19:35.427Z INFO  [rustowlc::core] borrow checked: 20 / 22
-2025-12-04T02:19:35.427Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.427Z INFO  [rustowlc::core] start borrowck of DefId(0:132 ~ smart_pointer[7e80]::mutex::{impl#0}::new)
-2025-12-04T02:19:35.427Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core::analyze] facts of DefId(0:132 ~ smart_pointer[7e80]::mutex::{impl#0}::new) prepared; start analyze of DefId(0:132 ~ smart_pointer[7e80]::mutex::{impl#0}::new)
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core] borrow checked: 21 / 22
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core] start borrowck of DefId(0:133 ~ smart_pointer[7e80]::mutex::{impl#0}::lock)
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core::analyze] facts of DefId(0:133 ~ smart_pointer[7e80]::mutex::{impl#0}::lock) prepared; start analyze of DefId(0:133 ~ smart_pointer[7e80]::mutex::{impl#0}::lock)
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core] borrow checked: 22 / 22
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.428Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.429Z INFO  [rustowlc::core::analyze] borrow check finished
-2025-12-04T02:19:35.433Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/arc.rs
-2025-12-04T02:19:35.433Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/arc.rs
-2025-12-04T02:19:35.433Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/cell.rs
-2025-12-04T02:19:35.434Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/arc.rs
-2025-12-04T02:19:35.434Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/cell.rs
-2025-12-04T02:19:35.434Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/cell.rs
-2025-12-04T02:19:35.435Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/arc.rs
-2025-12-04T02:19:35.435Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/rc.rs
-2025-12-04T02:19:35.436Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/rc.rs
-2025-12-04T02:19:35.437Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/rc.rs
-2025-12-04T02:19:35.437Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
-2025-12-04T02:19:35.438Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
-2025-12-04T02:19:35.440Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/rc.rs
-2025-12-04T02:19:35.440Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
-2025-12-04T02:19:35.441Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
-2025-12-04T02:19:35.443Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
-2025-12-04T02:19:35.443Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
-2025-12-04T02:19:35.445Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
-2025-12-04T02:19:35.447Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
-2025-12-04T02:19:35.447Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/mutex.rs
-2025-12-04T02:19:35.447Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/mutex.rs
-2025-12-04T02:19:35.448Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.438Z INFO  [rustowlc::core] start borrowck of DefId(0:26 ~ smart_pointer[7e80]::arc::{impl#2}::new)
+2025-12-04T03:23:17.439Z INFO  [rustowlc::core::analyze] facts of DefId(0:26 ~ smart_pointer[7e80]::arc::{impl#2}::new) prepared; start analyze of DefId(0:26 ~ smart_pointer[7e80]::arc::{impl#2}::new)
+2025-12-04T03:23:17.439Z INFO  [rustowlc::core] borrow checked: 1 / 22
+2025-12-04T03:23:17.439Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.439Z INFO  [rustowlc::core] start borrowck of DefId(0:30 ~ smart_pointer[7e80]::arc::{impl#3}::deref)
+2025-12-04T03:23:17.440Z INFO  [rustowlc::core::analyze] facts of DefId(0:30 ~ smart_pointer[7e80]::arc::{impl#3}::deref) prepared; start analyze of DefId(0:30 ~ smart_pointer[7e80]::arc::{impl#3}::deref)
+2025-12-04T03:23:17.440Z INFO  [rustowlc::core] borrow checked: 2 / 22
+2025-12-04T03:23:17.440Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.440Z INFO  [rustowlc::core] start borrowck of DefId(0:33 ~ smart_pointer[7e80]::arc::{impl#4}::clone)
+2025-12-04T03:23:17.440Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.440Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.440Z INFO  [rustowlc::core::analyze] facts of DefId(0:33 ~ smart_pointer[7e80]::arc::{impl#4}::clone) prepared; start analyze of DefId(0:33 ~ smart_pointer[7e80]::arc::{impl#4}::clone)
+2025-12-04T03:23:17.441Z INFO  [rustowlc::core] borrow checked: 3 / 22
+2025-12-04T03:23:17.441Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.441Z INFO  [rustowlc::core] start borrowck of DefId(0:36 ~ smart_pointer[7e80]::arc::{impl#5}::drop)
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core::analyze] facts of DefId(0:36 ~ smart_pointer[7e80]::arc::{impl#5}::drop) prepared; start analyze of DefId(0:36 ~ smart_pointer[7e80]::arc::{impl#5}::drop)
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core] borrow checked: 4 / 22
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core] start borrowck of DefId(0:48 ~ smart_pointer[7e80]::cell::{impl#0}::new)
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core::analyze] facts of DefId(0:48 ~ smart_pointer[7e80]::cell::{impl#0}::new) prepared; start analyze of DefId(0:48 ~ smart_pointer[7e80]::cell::{impl#0}::new)
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core] borrow checked: 5 / 22
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core] start borrowck of DefId(0:49 ~ smart_pointer[7e80]::cell::{impl#0}::set)
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core::analyze] facts of DefId(0:49 ~ smart_pointer[7e80]::cell::{impl#0}::set) prepared; start analyze of DefId(0:49 ~ smart_pointer[7e80]::cell::{impl#0}::set)
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core] borrow checked: 6 / 22
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.442Z INFO  [rustowlc::core] start borrowck of DefId(0:50 ~ smart_pointer[7e80]::cell::{impl#0}::get)
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core::analyze] facts of DefId(0:50 ~ smart_pointer[7e80]::cell::{impl#0}::get) prepared; start analyze of DefId(0:50 ~ smart_pointer[7e80]::cell::{impl#0}::get)
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core] borrow checked: 7 / 22
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core] start borrowck of DefId(0:68 ~ smart_pointer[7e80]::rc::{impl#0}::new)
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core::analyze] facts of DefId(0:68 ~ smart_pointer[7e80]::rc::{impl#0}::new) prepared; start analyze of DefId(0:68 ~ smart_pointer[7e80]::rc::{impl#0}::new)
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core] borrow checked: 8 / 22
+2025-12-04T03:23:17.443Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.444Z INFO  [rustowlc::core] start borrowck of DefId(0:71 ~ smart_pointer[7e80]::rc::{impl#1}::clone)
+2025-12-04T03:23:17.444Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.444Z INFO  [rustowlc::core::analyze] facts of DefId(0:71 ~ smart_pointer[7e80]::rc::{impl#1}::clone) prepared; start analyze of DefId(0:71 ~ smart_pointer[7e80]::rc::{impl#1}::clone)
+2025-12-04T03:23:17.444Z INFO  [rustowlc::core] borrow checked: 9 / 22
+2025-12-04T03:23:17.444Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.445Z INFO  [rustowlc::core] start borrowck of DefId(0:75 ~ smart_pointer[7e80]::rc::{impl#2}::deref)
+2025-12-04T03:23:17.445Z INFO  [rustowlc::core::analyze] facts of DefId(0:75 ~ smart_pointer[7e80]::rc::{impl#2}::deref) prepared; start analyze of DefId(0:75 ~ smart_pointer[7e80]::rc::{impl#2}::deref)
+2025-12-04T03:23:17.445Z INFO  [rustowlc::core] borrow checked: 10 / 22
+2025-12-04T03:23:17.445Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.445Z INFO  [rustowlc::core] start borrowck of DefId(0:78 ~ smart_pointer[7e80]::rc::{impl#3}::drop)
+2025-12-04T03:23:17.445Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.446Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.447Z INFO  [rustowlc::core::analyze] facts of DefId(0:78 ~ smart_pointer[7e80]::rc::{impl#3}::drop) prepared; start analyze of DefId(0:78 ~ smart_pointer[7e80]::rc::{impl#3}::drop)
+2025-12-04T03:23:17.447Z INFO  [rustowlc::core] borrow checked: 11 / 22
+2025-12-04T03:23:17.447Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.447Z INFO  [rustowlc::core] start borrowck of DefId(0:143 ~ smart_pointer[7e80]::ref_cell::{impl#6}::clone)
+2025-12-04T03:23:17.448Z INFO  [rustowlc::core::analyze] facts of DefId(0:143 ~ smart_pointer[7e80]::ref_cell::{impl#6}::clone) prepared; start analyze of DefId(0:143 ~ smart_pointer[7e80]::ref_cell::{impl#6}::clone)
+2025-12-04T03:23:17.448Z INFO  [rustowlc::core] borrow checked: 12 / 22
+2025-12-04T03:23:17.448Z INFO  [rustowlc::core] start borrowck of DefId(0:94 ~ smart_pointer[7e80]::ref_cell::{impl#0}::new)
+2025-12-04T03:23:17.448Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.448Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.448Z INFO  [rustowlc::core::analyze] facts of DefId(0:94 ~ smart_pointer[7e80]::ref_cell::{impl#0}::new) prepared; start analyze of DefId(0:94 ~ smart_pointer[7e80]::ref_cell::{impl#0}::new)
+2025-12-04T03:23:17.448Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.448Z INFO  [rustowlc::core] borrow checked: 13 / 22
+2025-12-04T03:23:17.449Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.449Z INFO  [rustowlc::core] start borrowck of DefId(0:95 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow)
+2025-12-04T03:23:17.450Z INFO  [rustowlc::core::analyze] facts of DefId(0:95 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow) prepared; start analyze of DefId(0:95 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow)
+2025-12-04T03:23:17.450Z INFO  [rustowlc::core] borrow checked: 14 / 22
+2025-12-04T03:23:17.450Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.450Z INFO  [rustowlc::core] start borrowck of DefId(0:96 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow_mut)
+2025-12-04T03:23:17.451Z INFO  [rustowlc::core::analyze] facts of DefId(0:96 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow_mut) prepared; start analyze of DefId(0:96 ~ smart_pointer[7e80]::ref_cell::{impl#0}::borrow_mut)
+2025-12-04T03:23:17.451Z INFO  [rustowlc::core] borrow checked: 15 / 22
+2025-12-04T03:23:17.451Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.451Z INFO  [rustowlc::core] start borrowck of DefId(0:104 ~ smart_pointer[7e80]::ref_cell::{impl#1}::deref)
+2025-12-04T03:23:17.451Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.451Z INFO  [rustowlc::core::analyze] facts of DefId(0:104 ~ smart_pointer[7e80]::ref_cell::{impl#1}::deref) prepared; start analyze of DefId(0:104 ~ smart_pointer[7e80]::ref_cell::{impl#1}::deref)
+2025-12-04T03:23:17.451Z INFO  [rustowlc::core] borrow checked: 16 / 22
+2025-12-04T03:23:17.451Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.452Z INFO  [rustowlc::core] start borrowck of DefId(0:107 ~ smart_pointer[7e80]::ref_cell::{impl#2}::drop)
+2025-12-04T03:23:17.452Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.452Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.453Z INFO  [rustowlc::core::analyze] facts of DefId(0:107 ~ smart_pointer[7e80]::ref_cell::{impl#2}::drop) prepared; start analyze of DefId(0:107 ~ smart_pointer[7e80]::ref_cell::{impl#2}::drop)
+2025-12-04T03:23:17.453Z INFO  [rustowlc::core] borrow checked: 17 / 22
+2025-12-04T03:23:17.453Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.454Z INFO  [rustowlc::core] start borrowck of DefId(0:115 ~ smart_pointer[7e80]::ref_cell::{impl#3}::deref)
+2025-12-04T03:23:17.454Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.454Z INFO  [rustowlc::core::analyze] facts of DefId(0:115 ~ smart_pointer[7e80]::ref_cell::{impl#3}::deref) prepared; start analyze of DefId(0:115 ~ smart_pointer[7e80]::ref_cell::{impl#3}::deref)
+2025-12-04T03:23:17.454Z INFO  [rustowlc::core] borrow checked: 18 / 22
+2025-12-04T03:23:17.454Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.454Z INFO  [rustowlc::core] start borrowck of DefId(0:118 ~ smart_pointer[7e80]::ref_cell::{impl#4}::deref_mut)
+2025-12-04T03:23:17.454Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.455Z INFO  [rustowlc::core::analyze] facts of DefId(0:118 ~ smart_pointer[7e80]::ref_cell::{impl#4}::deref_mut) prepared; start analyze of DefId(0:118 ~ smart_pointer[7e80]::ref_cell::{impl#4}::deref_mut)
+2025-12-04T03:23:17.455Z INFO  [rustowlc::core] borrow checked: 19 / 22
+2025-12-04T03:23:17.455Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.455Z INFO  [rustowlc::core] start borrowck of DefId(0:121 ~ smart_pointer[7e80]::ref_cell::{impl#5}::drop)
+2025-12-04T03:23:17.455Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.455Z INFO  [rustowlc::core::analyze] facts of DefId(0:121 ~ smart_pointer[7e80]::ref_cell::{impl#5}::drop) prepared; start analyze of DefId(0:121 ~ smart_pointer[7e80]::ref_cell::{impl#5}::drop)
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core] borrow checked: 20 / 22
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core] start borrowck of DefId(0:132 ~ smart_pointer[7e80]::mutex::{impl#0}::new)
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] facts of DefId(0:132 ~ smart_pointer[7e80]::mutex::{impl#0}::new) prepared; start analyze of DefId(0:132 ~ smart_pointer[7e80]::mutex::{impl#0}::new)
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core] borrow checked: 21 / 22
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core] start borrowck of DefId(0:133 ~ smart_pointer[7e80]::mutex::{impl#0}::lock)
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] facts of DefId(0:133 ~ smart_pointer[7e80]::mutex::{impl#0}::lock) prepared; start analyze of DefId(0:133 ~ smart_pointer[7e80]::mutex::{impl#0}::lock)
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core] borrow checked: 22 / 22
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.456Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T03:23:17.461Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/arc.rs
+2025-12-04T03:23:17.462Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/arc.rs
+2025-12-04T03:23:17.463Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/arc.rs
+2025-12-04T03:23:17.463Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/cell.rs
+2025-12-04T03:23:17.463Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/cell.rs
+2025-12-04T03:23:17.463Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/cell.rs
+2025-12-04T03:23:17.464Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/arc.rs
+2025-12-04T03:23:17.465Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/rc.rs
+2025-12-04T03:23:17.465Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/rc.rs
+2025-12-04T03:23:17.466Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/rc.rs
+2025-12-04T03:23:17.466Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.466Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.468Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/rc.rs
+2025-12-04T03:23:17.468Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.468Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.470Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.470Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.472Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.474Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
+2025-12-04T03:23:17.474Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/mutex.rs
+2025-12-04T03:23:17.474Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/mutex.rs
+2025-12-04T03:23:17.474Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/smart_pointer/src/ref_cell.rs
 {"$message_type":"diagnostic","message":"associated function `new` is never used","code":{"code":"dead_code","explanation":null},"level":"warning","spans":[{"file_name":"src/arc.rs","byte_start":380,"byte_end":394,"line_start":19,"line_end":19,"column_start":1,"column_end":15,"is_primary":false,"text":[{"text":"impl<T> Arc<T> {","highlight_start":1,"highlight_end":15}],"label":"associated function in this implementation","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"src/arc.rs","byte_start":408,"byte_end":411,"line_start":20,"line_end":20,"column_start":12,"column_end":15,"is_primary":true,"text":[{"text":"    pub fn new(value: T) -> Self {","highlight_start":12,"highlight_end":15}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"`#[warn(dead_code)]` on by default","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: associated function `new` is never used\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/arc.rs:20:12\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m19\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0mimpl<T> Arc<T> {\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--------------\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12massociated function in this implementation\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m20\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m    pub fn new(value: T) -> Self {\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m            \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mnote\u001b[0m\u001b[0m: `#[warn(dead_code)]` on by default\u001b[0m\n\n"}
 {"$message_type":"diagnostic","message":"associated function `new` is never used","code":{"code":"dead_code","explanation":null},"level":"warning","spans":[{"file_name":"src/cell.rs","byte_start":176,"byte_end":193,"line_start":12,"line_end":12,"column_start":1,"column_end":18,"is_primary":false,"text":[{"text":"impl<T> MyCell<T> {","highlight_start":1,"highlight_end":18}],"label":"associated function in this implementation","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"src/cell.rs","byte_start":207,"byte_end":210,"line_start":13,"line_end":13,"column_start":12,"column_end":15,"is_primary":true,"text":[{"text":"    pub fn new(value: T) -> Self {","highlight_start":12,"highlight_end":15}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: associated function `new` is never used\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/cell.rs:13:12\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m12\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0mimpl<T> MyCell<T> {\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m-----------------\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12massociated function in this implementation\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m13\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m    pub fn new(value: T) -> Self {\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m            \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^\u001b[0m\n\n"}
 {"$message_type":"diagnostic","message":"associated function `new` is never used","code":{"code":"dead_code","explanation":null},"level":"warning","spans":[{"file_name":"src/rc.rs","byte_start":286,"byte_end":299,"line_start":14,"line_end":14,"column_start":1,"column_end":14,"is_primary":false,"text":[{"text":"impl<T> Rc<T> {","highlight_start":1,"highlight_end":14}],"label":"associated function in this implementation","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"src/rc.rs","byte_start":313,"byte_end":316,"line_start":15,"line_end":15,"column_start":12,"column_end":15,"is_primary":true,"text":[{"text":"    pub fn new(value: T) -> Self {","highlight_start":12,"highlight_end":15}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: associated function `new` is never used\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/rc.rs:15:12\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m14\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0mimpl<T> Rc<T> {\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m-------------\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12massociated function in this implementation\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m15\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m \u001b[0m\u001b[0m    pub fn new(value: T) -> Self {\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\u001b[0m            \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^\u001b[0m\n\n"}
