@@ -1,0 +1,6 @@
+2025-12-04T20:53:37.314Z INFO  [rustowlc::core] start borrowck of DefId(0:4 ~ collections[075b]::main)
+2025-12-04T20:53:37.315Z INFO  [rustowlc::core::analyze] facts of DefId(0:4 ~ collections[075b]::main) prepared; start analyze of DefId(0:4 ~ collections[075b]::main)
+2025-12-04T20:53:37.315Z INFO  [rustowlc::core] borrow checked: 1 / 1
+2025-12-04T20:53:37.315Z INFO  [rustowlc::core::analyze] start re-computing borrow check with dump: true
+2025-12-04T20:53:37.316Z INFO  [rustowlc::core::analyze] borrow check finished
+2025-12-04T20:53:37.320Z INFO  [rustowlc::core] analyzed one item of /home/dharmsingh/data/projects/crust_rust/collections/src/lib.rs
