@@ -1,3 +1,4 @@
+#![allow(unused_variables)]
 // use std::ops::Deref;
 
 pub struct StrSplit<'a> {
@@ -75,16 +76,14 @@ impl<I: Iterator> Iterator for MyPeekable<I> {
     }
 }
 impl<'a> DoubleEndedIterator for StrSplit<'a> {
-    
     fn next_back(&mut self) -> Option<Self::Item> {
-            if let Some(next_delim)= self.haystack.rfind(self.delimiter) {
-                let result = &self.haystack[next_delim..];
-                self.haystack = self.haystack[..]
-                return  Some(result);
-            }
-            else {
-                None
-            }
+        if let Some(next_delim) = self.haystack.rfind(self.delimiter) {
+            let result = &self.haystack[next_delim..];
+            self.haystack = &self.haystack[..next_delim];
+            return Some(result);
+        } else {
+            None
+        }
     }
 }
 
