@@ -1,0 +1,44 @@
+thread 'rustc' panicked at compiler/rustc_lint/src/types/improper_ctypes.rs:671:36:
+not yet implemented: FIXME(unsafe_binder)
+stack backtrace:
+   0:     0x72a4ee9cf9fb - std::backtrace::Backtrace::create::ha3654f5fdf5da0d5
+   1:     0x72a4ee9cf945 - std::backtrace::Backtrace::force_capture::hb313f653540edc54
+   2:     0x72a4ed9f3eb2 - std[45c6313203fb7852]::panicking::update_hook::<alloc[847aabe45dfe1e2f]::boxed::Box<rustc_driver_impl[2af548eff57230f1]::install_ice_hook::{closure#1}>>::{closure#0}
+   3:     0x72a4ee9d093f - std::panicking::panic_with_hook::h51b38af1ca1e1ebd
+   4:     0x72a4ee9d06c6 - std::panicking::panic_handler::{{closure}}::hf1c491c970521ef3
+   5:     0x72a4ee9ca6e9 - std::sys::backtrace::__rust_end_short_backtrace::h08314d0b898e0d9a
+   6:     0x72a4ee9ab22d - __rustc[51913b3c1857ac82]::rust_begin_unwind
+   7:     0x72a4ebcc20d0 - core::panicking::panic_fmt::h67e821e4f1d79a99
+   8:     0x72a4f0b14634 - <rustc_lint[1e394b4abd6513fc]::types::improper_ctypes::ImproperCTypesVisitor>::visit_type.cold
+   9:     0x72a4ef4f9f36 - <rustc_lint[1e394b4abd6513fc]::types::improper_ctypes::ImproperCTypesVisitor>::check_type
+  10:     0x72a4ef4f9bd6 - <rustc_lint[1e394b4abd6513fc]::types::improper_ctypes::ImproperCTypesLint>::check_foreign_fn
+  11:     0x72a4ef7c1ffb - <rustc_lint[1e394b4abd6513fc]::late::LateContextAndPass<rustc_lint[1e394b4abd6513fc]::BuiltinCombinedModuleLateLintPass> as rustc_hir[391331675e53eb1a]::intravisit::Visitor>::visit_nested_item
+  12:     0x72a4ef7c3776 - rustc_lint[1e394b4abd6513fc]::lint_mod
+  13:     0x72a4ef7c32e1 - rustc_query_impl[f36ddac175e7664a]::plumbing::__rust_begin_short_backtrace::<rustc_query_impl[f36ddac175e7664a]::query_impl::lint_mod::dynamic_query::{closure#2}::{closure#0}, rustc_middle[de76249255bcfa01]::query::erase::Erased<[u8; 0usize]>>
+  14:     0x72a4f027ee89 - rustc_query_system[c8657f649c1811df]::query::plumbing::try_execute_query::<rustc_query_impl[f36ddac175e7664a]::DynamicConfig<rustc_query_system[c8657f649c1811df]::query::caches::DefaultCache<rustc_span[fa03773f7e1462b5]::def_id::LocalModDefId, rustc_middle[de76249255bcfa01]::query::erase::Erased<[u8; 0usize]>>, false, false, false>, rustc_query_impl[f36ddac175e7664a]::plumbing::QueryCtxt, true>
+  15:     0x72a4f027e1fe - rustc_query_impl[f36ddac175e7664a]::query_impl::lint_mod::get_query_incr::__rust_end_short_backtrace
+  16:     0x72a4f027dc4f - rustc_lint[1e394b4abd6513fc]::late::check_crate::{closure#1}
+  17:     0x72a4f027d7ba - rustc_lint[1e394b4abd6513fc]::late::check_crate
+  18:     0x72a4ef3cc876 - rustc_interface[7c243019132471b1]::passes::analysis
+  19:     0x72a4ef3cbfed - rustc_query_impl[f36ddac175e7664a]::plumbing::__rust_begin_short_backtrace::<rustc_query_impl[f36ddac175e7664a]::query_impl::analysis::dynamic_query::{closure#2}::{closure#0}, rustc_middle[de76249255bcfa01]::query::erase::Erased<[u8; 0usize]>>
+  20:     0x72a4f0415100 - rustc_query_system[c8657f649c1811df]::query::plumbing::try_execute_query::<rustc_query_impl[f36ddac175e7664a]::DynamicConfig<rustc_query_system[c8657f649c1811df]::query::caches::SingleCache<rustc_middle[de76249255bcfa01]::query::erase::Erased<[u8; 0usize]>>, false, false, false>, rustc_query_impl[f36ddac175e7664a]::plumbing::QueryCtxt, true>
+  21:     0x72a4f04149ff - rustc_query_impl[f36ddac175e7664a]::query_impl::analysis::get_query_incr::__rust_end_short_backtrace
+  22:     0x72a4f0488e4f - rustc_interface[7c243019132471b1]::passes::create_and_enter_global_ctxt::<core[5cffb7e31746bd7c]::option::Option<rustc_interface[7c243019132471b1]::queries::Linker>, rustc_driver_impl[2af548eff57230f1]::run_compiler::{closure#0}::{closure#2}>::{closure#2}::{closure#0}
+  23:     0x72a4f047a83e - rustc_interface[7c243019132471b1]::interface::run_compiler::<(), rustc_driver_impl[2af548eff57230f1]::run_compiler::{closure#0}>::{closure#1}
+  24:     0x72a4f0372eb8 - std[45c6313203fb7852]::sys::backtrace::__rust_begin_short_backtrace::<rustc_interface[7c243019132471b1]::util::run_in_thread_with_globals<rustc_interface[7c243019132471b1]::util::run_in_thread_pool_with_globals<rustc_interface[7c243019132471b1]::interface::run_compiler<(), rustc_driver_impl[2af548eff57230f1]::run_compiler::{closure#0}>::{closure#1}, ()>::{closure#0}, ()>::{closure#0}::{closure#0}, ()>
+  25:     0x72a4f0372b88 - <<std[45c6313203fb7852]::thread::Builder>::spawn_unchecked_<rustc_interface[7c243019132471b1]::util::run_in_thread_with_globals<rustc_interface[7c243019132471b1]::util::run_in_thread_pool_with_globals<rustc_interface[7c243019132471b1]::interface::run_compiler<(), rustc_driver_impl[2af548eff57230f1]::run_compiler::{closure#0}>::{closure#1}, ()>::{closure#0}, ()>::{closure#0}::{closure#0}, ()>::{closure#1} as core[5cffb7e31746bd7c]::ops::function::FnOnce<()>>::call_once::{shim:vtable#0}
+  26:     0x72a4f0378e0d - std::sys::thread::unix::Thread::new::thread_start::ha41cb00fe9e16d25
+  27:     0x72a4e9a9caa4 - start_thread
+                               at ./nptl/pthread_create.c:447:8
+  28:     0x72a4e9b29c6c - clone3
+                               at ./misc/../sysdeps/unix/sysv/linux/x86_64/clone3.S:78:0
+  29:                0x0 - <unknown>
+
+
+rustc version: 1.92.0-nightly (f6092f224 2025-09-22)
+platform: x86_64-unknown-linux-gnu
+
+query stack during panic:
+#0 [lint_mod] linting top-level module
+#1 [analysis] running analysis passes on this crate
+end of query stack

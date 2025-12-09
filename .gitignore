@@ -1,0 +1,7 @@
+# Ignore Rust/Cargo build output directories anywhere in the repo
+**/target/
+# Ignore Cargo.lock for libraries (optional)
+Cargo.lock
+
+# Ignore backup files
+*.rs.bk
