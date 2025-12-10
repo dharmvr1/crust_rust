@@ -1,0 +1,8 @@
+thread 'rustc' panicked at compiler/rustc_resolve/src/imports.rs:1173:33:
+Box<dyn Any>
+stack backtrace:
+   0:     0x724b99c640cb - <std[285740e871b60db1]::backtrace::Backtrace>::create
+   1:     0x724b99c64015 - <std[285740e871b60db1]::backtrace::Backtrace>::force_capture
+   2:     0x724b98cd5a73 - std[285740e871b60db1]::panicking::update_hook::<alloc[25beced18c04c782]::boxed::Box<rustc_driver_impl[b88a7a0a95d00e9d]::install_ice_hook::{closure#1}>>::{closure#0}
+   3:     0x724b99c76ea2 - std[285740e871b60db1]::panicking::panic_with_hook
+   4: 
